@@ -4,12 +4,16 @@ class view extends React.Component {
   render() {
     return (
       <div className="bookItem">
-        <h1>book item</h1>
         <form>
           <label>
+            <input type="checkbox" />
             Challenge text
-            <input type="text" />
           </label>
+          <br />
+          <label>
+            Books name: <input type="text" />
+          </label>
+          <button onClick={this.onClick}>Check</button>
         </form>
       </div>
     );
