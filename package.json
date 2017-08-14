@@ -1,0 +1,24 @@
+{
+  "name": "read-challange",
+  "version": "1.0.0",
+  "description": "App for challinging yourself to read more.",
+  "main": "index.js",
+  "dependencies": {
+    "@storybook/addon-actions": "^3.2.0",
+    "@storybook/cli": "^3.2.4",
+    "create-react-app": "^1.4.0",
+    "eslint": "^4.4.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "author": "Jesper Lindholmer",
+  "license": "ISC"
+}
