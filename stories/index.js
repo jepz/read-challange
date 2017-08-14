@@ -1,7 +1,8 @@
 import React from "react";
+
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
-storiesOf("Button", module).add("with text", () =>
-  <button onClick={action("clicked")}>Hello btn</button>
-);
+import bookItem from "../app/components/BookItem";
+
+storiesOf("Book Item", module).add("default", () => <bookItem.view />);
