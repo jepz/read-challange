@@ -1,5 +1,7 @@
 import React from "react";
 
+//TODO: add css-in-js, kolla på https://www.styled-components.com/docs/basics
+
 class view extends React.Component {
   onClick(eventArgs) {
     //change the Book name and input filed to a text field.
