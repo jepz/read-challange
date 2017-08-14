@@ -1,7 +1,7 @@
 {
   "name": "read-challange",
   "version": "1.0.0",
-  "description": "App for challinging yourself to read more.",
+  "description": "App for challenging yourself to read more.",
   "main": "index.js",
   "dependencies": {
     "@storybook/addon-actions": "^3.2.0",
