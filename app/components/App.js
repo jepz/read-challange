@@ -1,5 +1,6 @@
 import React from "react";
 import Books from "./Books";
+import Print from "./Print";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -20,6 +21,12 @@ const Title = styled.h1`
   font-weight: bold;
 `;
 
+const Footer = styled.div`
+  background-color: #66c7a7;
+  height: 200px;
+  width: 500px;
+`;
+
 //TODO: add css-in-js, kolla på https://www.styled-components.com/docs/basics
 
 class App extends React.Component {
@@ -30,6 +37,9 @@ class App extends React.Component {
           <Title>- Reading Challenge -</Title>
         </Header>
         <Books.Books />
+        <Footer>
+          <Print />
+        </Footer>
       </Section>
     );
   }
