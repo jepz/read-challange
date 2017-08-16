@@ -1,5 +1,7 @@
 import React from "react";
 
+import styled from "styled-components";
+
 //TODO: add css-in-js, kolla på https://www.styled-components.com/docs/basics
 
 class view extends React.Component {
@@ -17,7 +19,7 @@ class view extends React.Component {
           </label>
           <br />
           <label>
-            Books name: <input type="text" />
+            <input type="text" value="The books title" />
           </label>
           <button onClick={this.onClick}>Check</button>
         </form>
