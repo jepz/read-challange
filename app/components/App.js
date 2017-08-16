@@ -1,5 +1,5 @@
 import React from "react";
-import BookItem from "./BookItem";
+import Books from "./Books";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -7,15 +7,17 @@ const Section = styled.div`
   width: 50%;
 `;
 
+const Header = styled.div`
+  background-color: #66c7a7;
+  height: 200px;
+  width: 500px;
+`;
+
 const Title = styled.h1`
-  color: red;
+  font-family: 'Podkova', sans-serif;
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
-
-  &:first-line {
-    font-weight: lighter;
-    letter-spacing: 10px;
-  }
 `;
 
 //TODO: add css-in-js, kolla på https://www.styled-components.com/docs/basics
@@ -24,10 +26,10 @@ class App extends React.Component {
   render() {
     return (
       <Section>
-        <Title>
-          Reading <br />challenge
-        </Title>
-        <BookItem.view />
+        <Header>
+          <Title>- Reading Challenge -</Title>
+        </Header>
+        <Books.Books />
       </Section>
     );
   }
