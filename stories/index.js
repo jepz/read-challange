@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 import app from "../app/components/App";
-import bookItem from "../app/components/BookItem";
+import challenges from "../app/components/Challenges";
 
 storiesOf("Main App", module).add("default", () => <app.App />);
-storiesOf("Book Item", module).add("default", () => <bookItem.view />);
+storiesOf("Challenges", module).add("default", () => <challenges.Challenges />);
