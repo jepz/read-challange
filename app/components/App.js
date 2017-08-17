@@ -1,17 +1,18 @@
 import React from "react";
-import Books from "./Books";
+import Challenges from "./Challenges";
 import Print from "./Print";
 import styled from "styled-components";
 
 const Section = styled.div`
   margin: auto;
   width: 50%;
+  background-color: #e6e6e6;
 `;
 
 const Header = styled.div`
-  background-color: #66c7a7;
-  height: 200px;
-  width: 500px;
+  background-color: #66c7a7; //teal
+  margin: auto;
+  padding: 20px 50px 20px 50px;
 `;
 
 const Title = styled.h1`
@@ -19,13 +20,16 @@ const Title = styled.h1`
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 `;
 
 const Footer = styled.div`
   background-color: #66c7a7;
   height: 200px;
-  width: 500px;
+  width: 100%;
 `;
+
+const Button = styled.button`padding: 10px;`;
 
 //TODO: add css-in-js, kolla på https://www.styled-components.com/docs/basics
 
@@ -36,10 +40,8 @@ class App extends React.Component {
         <Header>
           <Title>- Reading Challenge -</Title>
         </Header>
-        <Books.Books />
-        <Footer>
-          <Print />
-        </Footer>
+        <Challenges.Challenges />
+        <Footer />
       </Section>
     );
   }
