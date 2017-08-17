@@ -1,21 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 
+const Bookitem = styled.li`
+  list-style: none;
+  width: 50%;
+  > form {
+    text-align: left;
+  }
+`;
+
 function BookItem(props) {
   return (
-    <div className="bookItem">
+    <Bookitem>
       <form>
+        <input type="checkbox" />
         <label>
-          <input type="checkbox" />
           {props.title}
         </label>
         <br />
         <label>
-          <input type="text" value="The books title" />
+          <input type="text" placeholder="The books title" />
         </label>
-        <button>Check</button>
+        <button type="submit" />
       </form>
-    </div>
+    </Bookitem>
   );
 }
 
