@@ -3,9 +3,9 @@ import Challenges from "./Challenges";
 import Print from "./Print";
 import styled from "styled-components";
 
-const Section = styled.div`
+const Section = styled.section`
   margin: auto;
-  width: 50%;
+  width: 750px;
   background-color: #e6e6e6;
 `;
 
@@ -21,11 +21,12 @@ const Title = styled.h1`
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  font-size: 35px;
 `;
 
 const Footer = styled.div`
   background-color: #66c7a7;
-  height: 200px;
+  height: 50px;
   width: 100%;
 `;
 
