@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Section = styled.section`
   margin: auto;
-  width: 750px;
+  width: 800px;
   background-color: #e6e6e6;
 `;
 

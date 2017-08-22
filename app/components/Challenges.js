@@ -10,7 +10,7 @@ const Library = styled.ul`
 `;
 
 var data = [
-  "A book wit more than 500 pages",
+  "A book with more than 500 pages",
   "A memoir",
   "A classic romance",
   "A book you can finish in a day",

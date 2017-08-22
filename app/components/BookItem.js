@@ -3,11 +3,15 @@ import styled from "styled-components";
 
 const Bookitem = styled.li`
   list-style: none;
-  width: 300px;
-  font-family: Roboto;
-  font-weight: lighter;
-  padding: 10px 10px 0 48px;
-  font-size: 11px;
+  width: 341px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 10px 10px 0 30px;
+  font-size: 13px;
+  :nth-child(odd) {
+    padding-left: 48px;
+  }
+
   > form {
     text-align: left;
   }
@@ -17,8 +21,8 @@ function BookItem(props) {
   return (
     <Bookitem>
       <form>
-        <input type="checkbox" />
         <label>
+          <input type="checkbox" />
           {props.title}
         </label>
         <br />
